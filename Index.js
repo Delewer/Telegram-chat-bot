@@ -1,12 +1,11 @@
+// Телеграм Чат Бот для ОАО КГТС
+
+
 const TelegramApi = require('node-telegram-bot-api')
 
-const token = '5556071783:AAHYRBCpkCWLF0RTmrx3ym1sywHUixft-4E'
+const token = 'Токен скрыт службой безопосности'
 
 const bot = new TelegramApi(token, {polling: true})
-
-var randomNumber = Math.random();
-
-
 
 
 bot.on('message',msg => {
@@ -79,4 +78,3 @@ bot.on('message',msg => {
         bot.sendMessage(chatId, 'Добрый день! Баланс можно узнать по телефону 45-07-07, после приветствия нажать цифру "2"');
 
 })
-
